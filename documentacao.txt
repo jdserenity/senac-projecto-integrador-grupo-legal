@@ -1,0 +1,28 @@
+7/04
+- Grupo foi criado
+- Tentamos um cliente (Espaço Garden Decoração), mas sem sucesso
+	- Cliente demonstrou dificuldades em receber esse tipo de serviço no momento devido a datas comemorativas não teria tempo
+
+08/04
+- O grupo concordou com a possibilidade de trabalhar no Zênite
+- Foi criado um repositorio no github para o PI
+
+10/04
+-Foram definidas alguns principios para o grupo:
+	- Sempre compartilhar ideias, duvidas e dificuldades ao longo do projeto.
+
+	- Sermos sinceros com opiniões, não estamos aqui pra amaciar o ego um do outro, mas pra ajudarmos uns aos outro a crescer.
+	
+	- Manter sempre uma boa comunicação do que conseguimos ou não fazer.
+	
+	- Dar nosso melhor e deixar a marca de cada um no projeto.
+	
+- O protótipo foi compartilhado com todos
+- Foi concordado que vamos nos ater a tecnologias mais simples, evitando react
+
+14/04
+- Foi feita uma votação para decidir como vamos seguir com o tema
+	- O Yuri acha que devemos seguir com outro cliente ficticio (faltando informar qual)
+	- Juan acha que devemos seguir com o Zênite
+	- João se absteve aguardando a opinião dos demais
+- Foi criado este arquivo de documentação do projeto com uma linha do tempo
