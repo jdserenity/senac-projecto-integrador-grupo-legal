@@ -23,6 +23,18 @@
 14/04
 - Foi feita uma votação para decidir como vamos seguir com o tema
 	- O Yuri acha que devemos seguir com outro cliente ficticio (faltando informar qual)
+	- Juan, Raquel e João acha que devemos seguir com o Zênite
 	- Juan acha que devemos seguir com o Zênite
-	- João se absteve aguardando a opinião dos demais
 - Foi criado este arquivo de documentação do projeto com uma linha do tempo
+
+16/04
+Fizemos uma pequena reunião durante a aula
+-Raquel vai cuidar da identidade visual
+-Juan do Sitemap
+-Yuri do Wireframe
+-João do conteudo
+
+-Cada um é responsavel por entregar suas tasks em tempo habil
+-Vamos utilizar Notion para dividir as tarefas
+-Vamos nos reunir depois da aula por alguns minutos quando necessario
+-Juan vai seguir fazendo a task dele no "estilo livre" por opção propria e depois vai arrumar se necessario
