@@ -16,4 +16,4 @@ Distribução de tarefas por feature:
 - Sitemap (JD)
 - Wireframe (Yuri)
 - Animação de tempestade rolando na pagina (JD)
-- Estilos e padrão e identidade visual (Raquel)
+- Estilos e identidade visual (Raquel)
