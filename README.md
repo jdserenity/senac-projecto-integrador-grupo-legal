@@ -1,6 +1,6 @@
 ﻿### senac-projecto-integrador-grupo-legal
 
-Notion Compartilhado: https://shorturl.at/khk17
+Notion Compartilhado: https://shorturl.at/KwnM5
 
 Prazo final: Oito de junho
 
