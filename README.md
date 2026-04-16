@@ -2,7 +2,7 @@
 
 Notion Compartilhado: https://shorturl.at/khk17
 
-Prazo final: Junho OITO
+Prazo final: Oito de junho
 
 Scopo:
 - Fazer um site bem bonito
