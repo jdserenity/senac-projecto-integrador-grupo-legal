@@ -1,6 +1,6 @@
 ﻿### senac-projecto-integrador-grupo-legal
 
-Prazo final: Oito de junho!!!
+*Prazo final: Oito de junho!!!*
 
 Notion Compartilhado: https://shorturl.at/KwnM5
 
@@ -18,7 +18,7 @@ Scopo:
 Distribução de tarefas por feature:
 - Prazos para cada etapa (Raquel)
 - ~~Conteudo (João)~~ ✓
-- Sitemap (JD)
+- Sitemap (JD) ~
 - Wireframe (Yuri)
 - Animação de tempestade rolando na pagina (JD)
 - Estilos e identidade visual (Raquel)
