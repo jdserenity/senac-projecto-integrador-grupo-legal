@@ -13,7 +13,7 @@ Scopo:
 
 Distribução de tarefas por feature:
 - Prazos para cada etapa (Raquel)
-- Conteudo (João)
+- ~~Conteudo (João)~~ ✓
 - Sitemap (JD)
 - Wireframe (Yuri)
 - Animação de tempestade rolando na pagina (JD)
