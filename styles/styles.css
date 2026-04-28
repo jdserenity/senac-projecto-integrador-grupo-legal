@@ -32,12 +32,12 @@ nav {
   top: 200px;
 }
 
-.links {
+.hero-links {
   display: flex;
   gap: 1rem;
 }
 
-h1, .links a {
+h1, .hero-links a {
   color: white;
 }
 
@@ -45,8 +45,9 @@ h1 {
   font-size: 3rem;
 }
 
-.links a {
-  text-decoration: none;
+a { text-decoration: none; }
+
+.hero-links a {
   font-size: 1rem;
 }
 
@@ -54,4 +55,28 @@ h1 {
   position: absolute; z-index: 1; right: 0.5rem; top: 0.5rem;
   width: 30px;
   height: 30px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: yellow;
 }
