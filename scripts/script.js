@@ -1,3 +1,5 @@
+import Lenis from 'lenis'
+
 const pauseButton = document.getElementsByClassName("pause-button")[0]
 const heroVideo = document.getElementsByTagName("video")[0]
 
