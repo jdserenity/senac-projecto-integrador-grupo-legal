@@ -49,3 +49,9 @@ h1 {
   text-decoration: none;
   font-size: 1rem;
 }
+
+.pause-button {
+  position: absolute; z-index: 1; right: 0.5rem; top: 0.5rem;
+  width: 30px;
+  height: 30px;
+}
