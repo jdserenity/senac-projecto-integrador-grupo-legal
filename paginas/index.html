@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Zênite</title>
   <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-  <header class="hero">
+  
+  <!-- Alterei de div para nav melhorando a semantica. coloquei 'a' lado a lado para evitar espaços imprevisiveis -->
+  <header>
+    
     <video loop autoplay muted disablePictureInPicture src="../assets/storm-loop.mp4"></video>
-    <nav>
-      <h1>Zênite</h1>
-      <div class="hero-links">
-        <a href="./casos-reais.html">Casos Reais</a>
-        <a href="./comercializacao.html">Comercialização</a>
-        <a href="./sobre-zenite.html">Sobre Zênite</a>
-        <a href="./falaconosco.html">Fala Conosco</a>
-      </div>
-    </nav>
-    <img class="pause-button" src="../assets/pause-button-128.png" alt="play and pause button for video">
+
+    <h1>Zênite</h1>
+
+
+      <nav>
+        <a href="./casos-reais.html">Casos Reais</a><a href="./comercializacao.html">Comercialização</a><a href="./sobre-zenite.html">Sobre Zênite</a>
+        <a href="./falaconosco.html">Fale Conosco</a>
+      </nav>
+
+    <img class="pause-button" src="../assets/pause-button-128.png" alt="botao de play e pause para o video de fundo">
+
+    <img id="butao" src="../imagens/seta-baixo.png" alt="Botao para rolar para x da pagina">
   </header>
+
   <main>
     <!-- Inicio -->
     <section>
@@ -28,6 +34,7 @@
         <button>Conhecer Soluções</button>
         <button>Saiba Mais</button>
     </section>
+
     <section>
       <!-- Problemas -->
       <h2>Problemas que Resolvemos</h2>
@@ -108,7 +115,7 @@
   </main>
   <footer>
     <section>
-      <h1>LOGO</h1>
+      <p>LOGO</p>
       <p>Inteligência preditiva para cidades mais resilientes</p>
     </section>
     <div class="footer-links">
