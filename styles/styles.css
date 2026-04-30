@@ -108,7 +108,149 @@ nav {
   height: 30px;
   cursor: pointer;
 }
+/* Estilização Index */
+.start-section {  
+  padding: 5px;
+  background-color: #2563eb;
+  h2{
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    margin-block: 1rem;
+    color: white;
+  }
+  p{
+    color: white;
+  }
 
+  .conhecer{
+    margin-block:1rem;
+    padding: 1rem 2rem;
+    font-size: 0.75rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .conhecer::after {
+    content: ' →';
+  }
+  .saiba-mais{
+    padding: 1rem 2rem;
+    font-size: 0.70rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+.problemas-que-resolvemos{
+  h2{
+    text-align: center;
+    margin-block: 12px;
+  }
+  p{
+    text-align: center;
+    margin-block:8px
+  }
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-block: 2rem;
+  }
+  .card{
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    border: solid 2px black;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    
+  }
+  .titulo-card{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+}
+.como-funciona{
+  h3{
+    padding-inline: 5px;
+    margin-block: 12px;
+  }
+  p{
+    padding-inline: 5px;
+    margin-block:8px
+  }
+}
+.mapa-interativo{
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+  border: solid 2px black;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.compromisso{
+  
+  h3{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  article{
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 1rem;
+    border:solid 2px black;
+    margin-block:10px ;
+    width: 90%;
+    margin-inline:auto;
+  }
+  ul{
+    list-style: none;
+  }
+}
+.pronto-para-transformar{
+  background-color: #2563EB;
+  padding: 1rem;
+  h3{
+    color: white;
+    text-align: center;
+  }
+  p{
+    color: white;
+  }
+  button{
+    padding: 1rem 2rem;
+    font-size: 0.70rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    margin-block: 12px;
+  }
+}
+
+
+
+/* Footer */
 footer {
   background-color: black;
   color: white;
