@@ -14,9 +14,13 @@
     <video loop autoplay muted disablePictureInPicture src="../assets/storm-loop.mp4"></video>
 
     <h1>Zênite</h1>
+         <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-
-      <nav>
+      <nav id="menu">
         <a href="./casos-reais.html">Casos Reais</a>
         <a href="./comercializacao.html">Comercialização</a>
         <a href="./sobre-zenite.html">Sobre Zênite</a>
@@ -138,5 +142,10 @@
     <h2>Grupo PI Legal™️</h2>
   </footer>
   <script src="../scripts/script.js"></script>
+  <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+  </script>
 </body>
 </html>
