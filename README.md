@@ -4,10 +4,6 @@
 
 Notion Compartilhado: https://shorturl.at/KwnM5
 
-Wireframe:
-
-Sitemap: https://wireframe.cc/X5MNMM
-
 Scopo:
 - Fazer um site bem bonito
 - Superar as expectativas
@@ -18,7 +14,16 @@ Scopo:
 Distribução de tarefas por feature:
 - Prazos para cada etapa (Raquel)
 - ~~Conteudo (João)~~ ✓
-- Sitemap (JD) ~
-- Wireframe (Yuri)
-- Animação de tempestade rolando na pagina (JD)
-- Estilos e identidade visual (Raquel)
+- ~~Sitemap (JD)~~ ~✓
+- ~~Wireframe (Yuri)~~ ✓
+- ~~Animação de tempestade rolando na pagina (JD)~~ ✓
+- ~~Estilos e identidade visual (Raquel)~~ ✓
+
+Sitemap: https://wireframe.cc/X5MNMM
+
+Wireframe:
+Home https://wireframe.cc/SnEh4j
+Casos Reais https://wireframe.cc/P10cFs
+Comercialização https://wireframe.cc/aWOQJE
+Sobre Zenite https://wireframe.cc/wbKP9R
+Fale Conosco https://wireframe.cc/hkURy1

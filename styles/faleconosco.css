@@ -1,0 +1,56 @@
+h1 {
+    position: static;
+}
+
+nav {
+    margin-block-start: 0;
+}
+
+header {
+    display: block;
+    background-image: none;
+    height: auto;
+    background-color: rgb(146, 184, 185);
+    padding: 1rem;
+}
+
+main {
+    background-color: lightgray;
+}
+
+.cards {
+    margin-block: 0;
+    padding-block: 2rem;
+}
+
+.card {
+    width: auto;
+}
+
+.solicitacao {
+    display: flex;
+    background-color: rgb(217, 235, 235);
+}
+
+.solicitacao div {
+    flex-basis: 40%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+textarea {
+    min-height: 4rem;
+    color: rgb(97, 97, 97);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+}
+
+.faq {
+    background-color: white;
+}
+
+

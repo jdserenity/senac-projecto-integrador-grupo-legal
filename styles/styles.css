@@ -5,6 +5,7 @@
 
 html {
   font-size: 16px;
+  font-family: system-ui, sans-serif;
 }
 
 body{ overflow-x: hidden;}
@@ -109,6 +110,7 @@ nav {
   height: 30px;
   cursor: pointer;
 }
+
 /* Estilização Index */
 .start-section {  
   padding: 5px;
@@ -145,6 +147,7 @@ nav {
     cursor: pointer;
   }
 }
+
 .problemas-que-resolvemos{
   h2{
     text-align: center;
@@ -154,33 +157,36 @@ nav {
     text-align: center;
     margin-block:8px
   }
-  .cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-block: 2rem;
-  }
-  .card{
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    padding: 1rem;
-    width: 300px;
-    border: solid 2px black;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    text-align: center;
-    
-  }
-  .titulo-card{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
 }
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.card{
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  border: solid 2px black;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  text-align: center;
+}
+
+.titulo-card{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
 .como-funciona{
   h3{
     padding-inline: 5px;
@@ -191,6 +197,7 @@ nav {
     margin-block:8px
   }
 }
+
 .mapa-interativo{
   background-color: #f0f0f0;
   border-radius: 10px;
@@ -203,6 +210,7 @@ nav {
   flex-direction: column;
   align-items: center;
 }
+
 .compromisso{
   
   h3{
@@ -210,10 +218,12 @@ nav {
     font-weight: bold;
     text-align: center;
   }
+
   p{
     font-size: 1.5rem;
     text-align: center;
   }
+
   article{
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -223,6 +233,7 @@ nav {
     width: 90%;
     margin-inline:auto;
   }
+
   ul{
     list-style: none;
   }
@@ -231,13 +242,16 @@ nav {
 .pronto-para-transformar{
   background-color: #2563EB;
   padding: 1rem;
+
   h3{
     color: white;
     text-align: center;
   }
+
   p{
     color: white;
   }
+
   button{
     padding: 1rem 2rem;
     font-size: 0.70rem;
@@ -250,8 +264,6 @@ nav {
   }
 }
 
-
-
 /* Footer */
 footer {
   background-color: black;
@@ -263,7 +275,6 @@ footer {
   
   height: 200px;
 }
-
 
 .footer-links {
   display: flex;
