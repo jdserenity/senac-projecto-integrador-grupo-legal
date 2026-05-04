@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fala Conosco</title>
+  <title>Fale Conosco</title>
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="../styles/faleconosco.css">
 </head>
@@ -15,7 +15,7 @@
       <a href="./comercializacao.html">Comercialização</a>
       <a href="./sobre-zenite.html">Sobre Zênite</a>
     </nav>
-    <h1>Fale Conosco</h1>
+    <h1>Fale Conosco!</h1>
     <h2>Entre em contato com nossa equipe. Estamos prontos para ajudar você a transformar sua cidade em um lugar mais resiliente.</h2>
   </header>
   <main>
@@ -57,24 +57,26 @@
           </ul>
       </div>
       <form action="" method="post">
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required>
+        <h5>Formulário de Contato</h5>
+
+        <label for="nome">Nome Completo: *</label>
+        <input type="text" id="nome" name="nome" placeholder="✦ Seu nome" required>
         
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">E-mail: *</label>
+        <input type="email" id="email" name="email" placeholder="✉ Seu@email.com" required>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required>
+        <label for="telefone">Telefone: *</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="☎ (00) 00000-0000" required>
 
-        <label for="organizacao">Organização:</label>
-        <input type="text" id="organizacao" name="organizacao" required>
+        <label for="organizacao">Organização: *</label>
+        <input type="text" id="organizacao" name="organizacao" placeholder="Nome da prefeitura ou empresa" required>
 
-        <label for="cargo">Cargo:</label>
-        <input type="text" id="cargo" name="cargo" required>
+        <label for="cargo">Cargo: *</label>
+        <input type="text" id="cargo" name="cargo" placeholder="Seu cargo" required>
 
-        <label for="interesse">Interesse:</label>
+        <label for="interesse">Interesse: *</label>
         <select id="interesse" name="interesse" required>
-          <option value="">Selecione um interesse</option>
+          <option value="Selecione">Selecione um interesse</option>
           <option value="alertas">Alertas de  Enchente</option>
           <option value="planejamento">Planejamento Urbano</option>
           <option value="gestao-de-crise">Gestão de Crise</option>
@@ -84,31 +86,35 @@
           <option value="outro">Outros</option>
         </select>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
+        <label for="mensagem">Mensagem: *</label>
+        <textarea id="mensagem" name="mensagem" placeholder="✎ Conte-nos um pouco sobre suas necessidades para a gente conseguir te ajudar melhor" required></textarea>
         
-        <button type="submit">Enviar</button>
-        <span>Ao enviar este formulário, você concorda com nossa Política de Privacidade e aceita receber comunicações do Zênite.</span>
+        <button type="submit" class="formulario-btn-enviar">➥ Enviar
+        </button>
+        
+        <p>Ao enviar este formulário, você concorda com nossa Política de Privacidade e aceita receber comunicações do Zênite.</p>
       </form>
     </section>
     <section class="faq">
       <h2>Perguntas Frequentes</h2>
-      <article>
-        <h3>Quanto tempo leva para implementar o Zênite?</h3>
-        <p>A implementação básica leva de 4 a 6 semanas, incluindo configuração, treinamento da equipe e período de teste. Implementações enterprise podem levar até 3 meses.</p>
-      </article>
-      <article>
-        <h3>É necessário hardware especial?</h3>
-        <p>Não. O Zênite é 100% baseado em nuvem. Você precisa apenas de um computador ou tablet com acesso à internet e um navegador moderno.</p>
-      </article>
-      <article>
-        <h3>Como é feito o treinamento da equipe?</h3>
-        <p>Oferecemos treinamento presencial ou online, documentação completa, vídeos tutoriais e suporte contínuo para garantir que sua equipe aproveite ao máximo a plataforma.</p>
-      </article>
-      <article>
-        <h3>O Zênite pode ser integrado com sistemas existentes?</h3>
-        <p>Sim! Oferecemos API robusta para integração com sistemas de gestão municipal, plataformas de emergência e outras ferramentas que você já utiliza.</p>
-      </article>
+      <div class="cards">
+        <article class="card">
+          <h3>Quanto tempo leva para implementar o Zênite?</h3>
+          <p>A implementação básica leva de 4 a 6 semanas, incluindo configuração, treinamento da equipe e período de teste. Implementações enterprise podem levar até 3 meses.</p>
+        </article>
+        <article class="card">
+          <h3>É necessário hardware especial?</h3>
+          <p>Não. O Zênite é 100% baseado em nuvem. Você precisa apenas de um computador ou tablet com acesso à internet e um navegador moderno.</p>
+        </article>
+        <article class="card">
+          <h3>Como é feito o treinamento da equipe?</h3>
+          <p>Oferecemos treinamento presencial ou online, documentação completa, vídeos tutoriais e suporte contínuo para garantir que sua equipe aproveite ao máximo a plataforma.</p>
+        </article>
+        <article class="card">
+          <h3>O Zênite pode ser integrado com sistemas existentes?</h3>
+          <p>Sim! Oferecemos API robusta para integração com sistemas de gestão municipal, plataformas de emergência e outras ferramentas que você já utiliza.</p>
+        </article>
+      </div>
     </section>
   </main>
   <footer>

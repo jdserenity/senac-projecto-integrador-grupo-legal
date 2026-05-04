@@ -12,6 +12,9 @@ header {
     height: auto;
     background-color: rgb(146, 184, 185);
     padding: 1rem;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
 }
 
 main {
@@ -21,6 +24,9 @@ main {
 .cards {
     margin-block: 0;
     padding-block: 2rem;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
 }
 
 .card {
@@ -30,10 +36,23 @@ main {
 .solicitacao {
     display: flex;
     background-color: rgb(217, 235, 235);
+    padding: 1rem;
+
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
 }
 
 .solicitacao div {
     flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 form {
@@ -42,15 +61,55 @@ form {
     flex-basis: 60%;
 }
 
+h5 {
+    font-size: 1.2rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #829191;
+}
+
+input, textarea, select, .formulario-btn-enviar {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
 textarea {
-    min-height: 4rem;
+    min-height: 7rem;
     color: rgb(97, 97, 97);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 0.9rem;
+    resize: vertical;
+}
+
+option {
+    background-color: lightray;
+}
+
+.formulario-btn-enviar {
+    background-color: black;
+    color: white;
+}
+
+form p {
+    font-size: ;
 }
 
 .faq {
     background-color: white;
+    padding: 1rem;
 }
 
+.faq h2 {
+    margin-block-end: 1rem;
+}
 
+.faq .cards {
+    padding: 0;
+}
