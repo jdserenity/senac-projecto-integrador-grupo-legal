@@ -22,8 +22,8 @@ Distribução de tarefas por feature:
 Sitemap: https://wireframe.cc/X5MNMM
 
 Wireframe:
-https://wireframe.cc/SnEh4j Home
-https://wireframe.cc/P10cFs Casos Reais
-https://wireframe.cc/aWOQJE Comercialização
-https://wireframe.cc/wbKP9R Sobre Zenite
-https://wireframe.cc/hkURy1 Fale Conosco
+Home https://wireframe.cc/SnEh4j
+Casos Reais https://wireframe.cc/P10cFs
+Comercialização https://wireframe.cc/aWOQJE
+Sobre Zenite https://wireframe.cc/wbKP9R
+Fale Conosco https://wireframe.cc/hkURy1
