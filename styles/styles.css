@@ -77,6 +77,10 @@ h1{
   cursor: pointer;
 }
 
+
+/*teste menu*/
+
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -95,13 +99,13 @@ nav {
     background-color: rgba(0, 0, 0, 0.048);
     text-align: center;
     margin-block: auto;
-    /* flex-basis: 20%; */
+    flex-basis: 20%; 
     border-radius: 5px;
     padding: 1vw 5px;
     box-shadow: 0 0 10px black;
     font-size: 3.4vw;
   }
-}
+} 
 
 .pause-button {
   position: absolute; z-index: 1; right: 1rem; top: 1rem;
@@ -109,6 +113,8 @@ nav {
   height: 30px;
   cursor: pointer;
 }
+
+
 /* Estilização Index */
 .start-section {  
   padding: 5px;

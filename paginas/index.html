@@ -9,28 +9,25 @@
 <body>
   
   <!-- Alterei de div para nav melhorando a semantica. coloquei 'a' lado a lado para evitar espaços imprevisiveis -->
+   
   <header>
     
     <video loop autoplay muted disablePictureInPicture src="../assets/storm-loop-comprimido.mp4"></video>
-
+    <button id="menu-btn">☰</button>
     <h1>Zênite</h1>
-         <div class="menu-toggle" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-      <nav id="menu">
+      <nav id="menu" class="hidden">
         <a href="./casos-reais.html">Casos Reais</a>
         <a href="./comercializacao.html">Comercialização</a>
         <a href="./sobre-zenite.html">Sobre Zênite</a>
         <a href="./faleconosco.html">Fale Conosco</a>
       </nav>
-
+    <div id="overlay" class="hidden"></div>  
     <img class="pause-button" src="../assets/pause-button-128.png" alt="botao de play e pause para o video de fundo">
 
     <img id="butao" src="../imagens/seta-baixo.png" alt="Botao para rolar para x da pagina">
   </header>
+
+
 
   <main>
     <!-- Inicio -->
