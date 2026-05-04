@@ -1,0 +1,24 @@
+h1 {
+    position: static;
+}
+
+nav {
+    margin-block-start: 0;
+}
+
+header {
+    display: block;
+    background-image: none;
+    height: auto;
+    background-color: rgb(146, 184, 185);
+    padding: 1rem;
+}
+
+.solicitacao {
+    display: flex;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
