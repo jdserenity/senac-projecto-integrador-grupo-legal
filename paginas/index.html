@@ -1,146 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zênite</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- otimizações para SEO E GEO -->
+    <meta name="description" content="Zênite utiliza inteligência preditiva, dados climáticos e simulações urbanas para antecipar desastres e tornar cidades mais resilientes.">
+    <meta property="og:title" content="Zênite">
+    <meta property="og:description" content="Inteligência preditiva para cidades resilientes">
+    <meta property="og:image" content="../imagens/zenite-cidade.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zenite.com.br/">
+    <meta name="robots" content="index, follow">
+
+    <title>Zênite - Plataforma de Monitoramento Climático e Resiliência Urbana</title>
+    <link rel="canonical" href="https://zenite.com.br/">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    </head>
 <body>
   <!-- Alterei de div para nav melhorando a semantica. coloquei 'a' lado a lado para evitar espaços imprevisiveis -->
   <header>
-    <video loop autoplay muted disablePictureInPicture src="../assets/storm-loop-comprimido.mp4"></video>
+    <video loop autoplay muted playsinline disablePictureInPicture src="../assets/storm-loop-comprimido.mp4"></video>
 
     <h1>Zênite</h1>
-    <nav>
-      <a href="./casos-reais.html">Casos Reais</a>
-      <a href="./comercializacao.html">Comercialização</a>
-      <a href="./sobre-zenite.html">Sobre Zênite</a>
-      <a href="./faleconosco.html">Fale Conosco</a>
-    </nav>
+      <nav aria-label="Menu principal">
+        <a href="./casos-reais.html">Casos Reais</a>
+        <a href="./comercializacao.html">Comercialização</a>
+        <a href="./sobre-zenite.html">Sobre Zênite</a>
+        <a href="./faleconosco.html">Fale Conosco</a>
+      </nav>
 
-    <img class="pause-button" src="../assets/pause-button-128.png" alt="botao de play e pause para o video de fundo">
-    
-    <img id="botao-rolar" src="../imagens/seta-baixo.png" alt="Botao para rolar para x da pagina">
+      <img class="pause-button" href="#começo-rolagem" loading="lazy" src="../assets/pause-button-128.png" alt="Controle video">
+      
+      <img id="botao-rolar" loading="lazy" src="../imagens/seta-baixo.png" alt="Botão para rolar para baixo">
   </header>
 
   <main>
     <!-- Inicio -->
-    <section class="start-section">
+      <section id="comeco-rolagem" class="start-section" aria-label="Introdução à Zênite">
         <h2>Inteligência Preditiva para Cidades Resilientes</h2>
-        <p>O Zênite utiliza dados climáticos, topográficos e simulações avançadas para antecipar desastres, reduzir danos e planejar cidades mais resilientes.</p>
-        <button class="conhecer">Conhecer Soluções</button>
-        <button class="saiba-mais">Saiba Mais </button>
-    </section>
+
+        <p>A Zênite é uma plataforma de monitoramento climático urbano que utiliza inteligência artificial, dados ambientais e simulações preditivas para auxiliar prefeituras, urbanistas e órgãos de Defesa Civil.</p>
+        <div class="start-buttons">
+          <a class="conhecer" href="./comercializacao.html">Conhecer Soluções</a>
+          <a class="saiba-mais" href="./sobre-zenite.html">Saiba Mais</a>
+        </div>
+      </section>
 
     <section class="problemas-que-resolvemos">
-      <!-- Problemas -->
+
       <h2>Problemas que Resolvemos</h2>
-      <p>Transformando a gestão de desastres de reativa para          preditiva</p>
+        <p>Transformando a gestão de desastres de reativa para preditiva</p>
+
       <div class="cards">
+
         <div class="card">
-          <p class="titulo-card">Previsões Genéricas</p>
-          <p class="card-conteudo">
-            Substituímos previsões climáticas genéricas por análises precisas de microclimas urbanos
-          </p>
+          <h3 class="titulo-card">Previsões precisas</h3>
+            <p class="card-conteudo">Substituímos previsões climáticas genéricas por análises precisas de microclimas urbanos</p>
         </div>
+
         <div class="card">
-          <p class="titulo-card">Atuação Reativa</p>
-          <p class="card-conteudo">
-            Atuação Reativa
-            Permitimos ação proativa da Defesa Civil com alertas antecipados por rua
-          </p>
+          <h3 class="titulo-card">Atuação reativa</h3>
+            <p class="card-conteudo">Permitimos ação proativa da Defesa Civil com alertas antecipados por rua</p>
         </div>
+
         <div class="card">
-          <p class="titulo-card">Urbanismo Cego</p>
-          <p class="card-conteudo">
-            Integramos métricas ambientais no planejamento urbano e licenciamento
-          </p>
+          <h3 class="titulo-card">Urbanismo inteligente</h3>
+            <p class="card-conteudo">Integramos métricas ambientais no planejamento urbano e licenciamento</p>
         </div>
+
         <div class="card">
-          <p class="titulo-card">Laudos Desatualizados</p>
-          <p class="card-conteudo">
-            Aceleramos licenciamentos com dados ambientais em tempo real
-          </p>
+          <h3 class="titulo-card">Laudos eficientes</h3>
+            <p class="card-conteudo">Aceleramos licenciamentos com dados ambientais em tempo real</p>
         </div>
+
       </div>
+
     </section>
+
     <section class="como-funciona">
-      <h3>Como Funciona</h3>
-      <p>Mapa 3D Interativo
-        Réplica digital da cidade com visualização detalhada de terreno e infraestrutura
-      </p>
-      <p>Camadas de Análise
-        Fluxo de agua, ilhas de calor, simulação de vento e previsão futura em timeline
-      </p>
-      <p>Tecnologia Avançada
-        Integração com simulações climáticas globais em plataforma web acessível
-      </p>
-      <article class="mapa-interativo">
-        <h3>Mapa Interativo</h3>
-      </article>
-    </section>
+      
+      <h2>Como Funciona</h2>
+        <dl>
+
+          <dt>Mapa 3D Interativo:</dt>
+            <dd>Réplica digital da cidade com visualização detalhada de terreno e infraestrutura</dd>
+
+          <dt>Camadas de Análise:</dt>
+            <dd>Fluxo de agua, ilhas de calor, simulação de vento e previsão futura em timeline</dd>
+
+          <dt>Tecnologia Avançada:</dt>
+            <dd>Integração com simulações climáticas globais em plataforma web acessível</dd>
+
+        </dl>
+    </section>  
+    
     <section class="compromisso">
-      <h3>Compromisso</h3>
-      <p>ESG Ambiental Social e Governança</p>
-      <article>
-        <h4>Ambiental</h4>
-        <ul>
-          <li>✓ Adaptação às mudanças climáticas</li>
-          <li>✓ Infraestrutura sustentável</li>
-          <li>✓ Green IT</li>
-        </ul>
-      </article>
-      <article>
-        <h4>Social</h4>
-        <ul>
-          <li>✓ Proteção de comunidades vulneráveis</li>
-          <li>✓ Democratização de dados climáticos</li>
-          <li>✓ Justiça climática</li>
-        </ul>
-      </article>
-      <article>
-        <h4>Governança</h4>
-        <ul>
-          <li>✓ Transparência de dados</li>
-          <li>✓ Conformidade LGPD</li>
-          <li>✓ Combate ao greenwashing</li>
-        </ul>
-      </article>
+      <h2>Compromisso</h2 >
+        <p>ESG Ambiental Social e Governança</p>
+
+        <section>
+          <h3>Ambiental</h3>
+            <ul>
+              <li>✓ Adaptação às mudanças climáticas</li>
+              <li>✓ Infraestrutura sustentável</li>
+              <li>✓ Green IT</li>
+            </ul>
+        </section>
+
+        <section>
+          <h3>Social</h3>
+            <ul>
+              <li>✓ Proteção de comunidades vulneráveis</li>
+              <li>✓ Democratização de dados climáticos</li>
+              <li>✓ Justiça climática</li>
+            </ul>
+        </section>
+
+        <section>
+          <h3>Governança</h3>
+            <ul>
+              <li>✓ Transparência de dados</li>
+              <li>✓ Conformidade LGPD</li>
+            <li>✓ Combate ao greenwashing</li>
+          </ul>
+        </section>
+
     </section>
+
     <section class="pronto-para-transformar">
-      <h3>Pronto para Transformar sua Cidade?</h3>
-      <p>Entre em contato e descubra como o Zênite pode proteger sua comunidade</p>
-      <button>Fale Conosco</button>
+      <h2>Pronto para Transformar sua Cidade?</h2>
+        <p>Entre em contato e descubra como o Zênite pode proteger sua comunidade</p>
+        <a class="conhecer" href="./falaconosco.html">Fale Conosco</a>
     </section>
+
   </main>
+
   <footer>
-    <section>
-      <p>LOGO</p>
-      <p>Inteligência preditiva para cidades mais resilientes</p>
-    </section>
-    <div class="footer-links">
-      <a href="./casos-reais.html">Casos Reais</a>
-      <a href="./comercializacao.html">Comercialização</a>
-      <a href="./sobre-zenite.html">Sobre Zênite</a>
-      <a href="./falaconosco.html">Fala Conosco</a>
+
+    <div class="logo">
+      <img class="logo-original" loading="lazy" src="../imagens/zenite-logo-original.png" alt="Logo Zênite">
     </div>
-    <div class="footer-contato">
-      <p>Contato
-        São Paulo, Brasil
-        contato@zenite.com.br
-      </p>
-    </div>
-    <h2>Grupo PI Legal™️</h2>
+
+      <h2>Inteligência preditiva para cidades mais resilientes</h2>
+      
+      <div class="footer-links">
+        <a href="./casos-reais.html">Casos Reais</a>
+        <a href="./comercializacao.html">Comercialização</a>
+        <a href="./sobre-zenite.html">Sobre Zênite</a>
+        <a href="./faleconosco.html">Fale Conosco</a>
+      </div>
+
+      <div class="footer-contato">
+        <p>Email: <a href="mailto:contato@zenite.com.br">contato@zenite.com.br</a></p>
+        <p>Telefone: <a href="tel:+551112345678">(11) 1234-5678</a></p>
+      </div>
+    
   </footer>
+
   <script src="../scripts/script.js"></script>
+  
   <script>
       function toggleMenu() {
         document.getElementById("menu").classList.toggle("active");
       }
   </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Zênite",
+      "url": "https://zenite.com.br",
+      "description": "Plataforma de monitoramento climático e resiliência urbana"
+    }
+</script>
 </body>
 </html>
