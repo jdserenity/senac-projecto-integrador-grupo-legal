@@ -1,3 +1,5 @@
+/* META */
+
 :root{
   /* Cores principais */
   --cor-principal1: #0B1F3A;
@@ -22,6 +24,8 @@
   margin: 0; padding: 0;
 }
 
+/* TODO */
+
 html {
   font-size: 16px;
   font-family: system-ui, sans-serif;
@@ -31,7 +35,14 @@ body{ overflow-x: hidden;}
 
 }
 
+/* HEADER */
+
 h1, nav {text-shadow: 0 0 10px black;}
+
+a {
+  text-decoration: none;
+  color: white;
+}
 
 header{
   display: flex;
@@ -69,6 +80,8 @@ h1{
   /* tipografia */
   font-size: 12vw ;
   font-family: var(--fonte-titulos);
+
+  color: white;
 }
 
 #botao-rolar{
@@ -112,7 +125,7 @@ nav {
   /* Tamanho */
   width: 95%;
 
-  a{
+  a {
     /* Fonte */
     font-size: 3.4vw;
 
@@ -130,6 +143,8 @@ nav {
   height: 30px;
   cursor: pointer;
 }
+
+/* main */
 
 /* Estilização Index */
 .start-section {  
@@ -284,7 +299,8 @@ nav {
   }
 }
 
-/* Footer */
+/* FOOTER */
+
 footer {
   background-color: black;
   color: white;
