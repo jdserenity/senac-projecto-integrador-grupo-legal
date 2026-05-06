@@ -55,6 +55,10 @@ h2 {
     font-size: 2rem;
 }
 
+.solicitacao li {
+    list-style-type: "✓  ";
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -95,10 +99,6 @@ option {
 .formulario-btn-enviar {
     background-color: black;
     color: white;
-}
-
-form p {
-    font-size: ;
 }
 
 .faq {
