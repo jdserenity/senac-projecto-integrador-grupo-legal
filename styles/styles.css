@@ -33,11 +33,6 @@ body{ overflow-x: hidden;}
 
 h1, nav {text-shadow: 0 0 10px black;}
 
-h1, nav a {
-  color: white;
-  text-decoration: none;
-}
-
 header{
   display: flex;
   justify-content: center;

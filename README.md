@@ -18,12 +18,13 @@ Distribução de tarefas por feature:
 - ~~Wireframe (Yuri)~~ ✓
 - ~~Animação de tempestade rolando na pagina (JD)~~ ✓
 - ~~Estilos e identidade visual (Raquel)~~ ✓
+- Rolagem conectado com o video da pagina casa (JD)
 
 Sitemap: https://wireframe.cc/X5MNMM
 
-Wireframe:
-Home https://wireframe.cc/SnEh4j
-Casos Reais https://wireframe.cc/P10cFs
-Comercialização https://wireframe.cc/aWOQJE
-Sobre Zenite https://wireframe.cc/wbKP9R
-Fale Conosco https://wireframe.cc/hkURy1
+Wireframe:  
+Home: https://wireframe.cc/SnEh4j  
+Casos Reais: https://wireframe.cc/P10cFs  
+Comercialização: https://wireframe.cc/aWOQJE  
+Sobre Zenite: https://wireframe.cc/wbKP9R  
+Fale Conosco: https://wireframe.cc/hkURy1  
