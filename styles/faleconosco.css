@@ -2,37 +2,36 @@ h1 { position: static; }
 
 nav { margin-block-start: 0; }
 
+header, .cards, .solicitacao { border-bottom-color: grey; }
+
 header {
     display: block;
     background-image: none;
     height: auto;
-    background-color: rgb(146, 184, 185);
+    background-color: var(--cor-principal1);
     padding: 1rem;
     border-bottom-style: solid;
-    border-bottom-color: grey;
     border-bottom-width: 1px;
 }
 
-main { background-color: lightgray; }
+main { background-color: var(--cor-principal2); }
 
 .cards {
     margin-block: 0;
     padding-block: 2rem;
     border-bottom-style: solid;
-    border-bottom-color: grey;
     border-bottom-width: 1px;
 }
 
-.cards a { color: blue; }
+.cards a { color: var(--cor-principal3); }
 
 .card { width: auto; }
 
 .solicitacao {
     display: flex;
-    background-color: rgb(217, 235, 235);
+    background-color: var(--cor-principal5);
     padding: 1rem;
     border-bottom-style: solid;
-    border-bottom-color: grey;
     border-bottom-width: 1px;
 }
 
@@ -44,7 +43,10 @@ main { background-color: lightgray; }
     padding-inline: 1rem;
 }
 
-h2 { font-size: 2rem; }
+h2 { 
+    font-size: 2rem;
+    color: var(--cor-principal4)
+}
 
 .solicitacao li { list-style-type: "✓  "; }
 
@@ -58,7 +60,7 @@ h5 { font-size: 1.2rem; }
 
 label {
     font-size: 1rem;
-    color: #829191;
+    color: var(--cor-principal4);
 }
 
 input, textarea, select, .formulario-btn-enviar {
@@ -72,7 +74,7 @@ input:focus, textarea:focus, select:focus { outline: none; }
 
 textarea {
     min-height: 7rem;
-    color: rgb(97, 97, 97);
+    color: var(--cor-neutra3);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     resize: vertical;
 }
@@ -80,12 +82,12 @@ textarea {
 option { background-color: lightray; }
 
 .formulario-btn-enviar {
-    background-color: black;
-    color: white;
+    background-color: var(--cor-neutra1);
+    color: var(--cor-neutra5);
 }
 
 .faq {
-    background-color: white;
+    background-color: var(--cor-principal4);
     padding: 1rem;
 }
 
