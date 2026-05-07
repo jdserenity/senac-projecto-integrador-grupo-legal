@@ -1,7 +1,9 @@
 'use strict'
 
-const pauseButton = document.getElementsByClassName("pause-button")[0]
-const heroVideo = document.getElementsByTagName("video")[0]
+const pauseButton = document.getElementsByClassName("pause-button")[0];
+const heroVideo = document.getElementsByTagName("video")[0];
+const scrollButton = document.querySelector("#botao-rolar");
+const startSection = document.querySelector('#comeco-rolagem')
 
 heroVideo.playbackRate = 0.75;
 
