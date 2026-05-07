@@ -15,3 +15,7 @@ pauseButton.addEventListener("click", () => {
 scrollButton.addEventListener('click', () =>{
   startSection.scrollIntoView({behavior: "smooth"});
 })
+
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
