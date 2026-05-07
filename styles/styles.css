@@ -38,7 +38,7 @@ header{
   display: flex;
   justify-content: center;
   
-  position: relative;
+  position: sticky;
   
   width: 100vw;
   height: 100vh;
@@ -60,8 +60,7 @@ header video {
 h1{
   color: white;
   /* posição */
-  position: absolute;
-  top: 40vh;
+
   
   /* estilização */
   padding-block-end: 0;
@@ -69,7 +68,6 @@ h1{
   border-image: var(--gradiente);
   
   /* tipografia */
-  font-size: 12vw ;
   font-family: var(--fonte-titulos);
 }
 
@@ -98,7 +96,6 @@ h1{
 }
 
 
-/*teste menu*/
 
 
 nav {
