@@ -19,6 +19,7 @@ Distribução de tarefas por feature:
 - ~~Animação de tempestade rolando na pagina (JD)~~ ✓
 - ~~Estilos e identidade visual (Raquel)~~ ✓
 - Rolagem conectado com o video da pagina casa (JD)
+- Mapa 3D no index/home (alguém)
 
 Sitemap: https://wireframe.cc/X5MNMM
 
