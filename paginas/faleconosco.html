@@ -8,18 +8,19 @@
   <link rel="stylesheet" href="../styles/faleconosco.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="./index.html">Casa</a>
-      <a href="./casos-reais.html">Casos Reais</a>
-      <a href="./comercializacao.html">Comercialização</a>
-      <a href="./sobre-zenite.html">Sobre Zênite</a>
-    </nav>
-    <h1>Fale Conosco!</h1>
-    <h2>Entre em contato com nossa equipe. Estamos prontos para ajudar você a transformar sua cidade em um lugar mais resiliente.</h2>
-  </header>
+  
+    <!-- MENU SERÁ INSERIDO AQUI VIA JS -->
+  <div id="menu-container"></div>
+
+
+
   <main>
-    <section class="cards">
+    <!-- Contatos -->
+    <section>
+      <h1>Fale Conosco</h1>
+      <p>Entre em contato com nossa equipe. Estamos prontos para ajudar você a transformar sua cidade em um lugar mais resiliente.</p>
+    </section>
+    <section>
       <article class="card">
         <h3>E-mail</h3>
         <a href="mailto:contato@zenite.com">contato@zenite.com</a>
@@ -33,31 +34,34 @@
         <p>Rua Exemplo, 123 - São Paulo/SP</p>
       </article>
     </section>
-    <section class="solicitacao">
-      <div>
-        <h2>Solicite uma Demonstração</h2>
-        <p>Preencha o formulário ao lado e nossa equipe entrará em contato em até 24 horas úteis para agendar uma demonstração personalizada da plataforma Zênite.</p>
-          <ul>
-            <li>
-              <h4>Demonstração Personalizada</h4>
-              <p>Apresentação adaptada às necessidades específicas da sua organização</p>
-            </li>
-            <li>
-              <h4>Consultoria Gratuita</h4>
-              <p>Análise inicial dos desafios climáticos da sua região</p>
-            </li>
-            <li>
-              <h4>Proposta Customizada</h4>
-              <p>Plano de implementação e investimento sob medida</p>
-            </li>
-            <li>
-              <h4>Sem Compromisso</h4>
-              <p>Conheça a plataforma sem qualquer obrigação de contratação</p>
-            </li>
-          </ul>
-      </div>
-      <form action="" method="post">
-        <h5>Formulário de Contato</h5>
+    <!-- Formulario de contato -->
+    <section>
+      <h2>Solicite uma Demonstração</h2>
+      <p>Preencha o formulário ao lado e nossa equipe entrará em contato em até 24 horas úteis para agendar uma demonstração personalizada da plataforma Zênite.</p>
+        <ul>
+          <li>
+            <h4>Demonstração Personalizada</h4>
+            <p>Apresentação adaptada às necessidades específicas da sua organização</p>
+          </li>
+          <li>
+            <h4>Consultoria Gratuita</h4>
+            <p>Análise inicial dos desafios climáticos da sua região</p>
+          </li>
+          <li>
+            <h4>Proposta Customizada</h4>
+            <p>Plano de implementação e investimento sob medida</p>
+          </li>
+          <li>
+            <h4>Sem Compromisso</h4>
+            <p>Conheça a plataforma sem qualquer obrigação de contratação</p>
+          </li>
+        </ul>
+        <form action="" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
 
         <label for="nome">Nome Completo: *</label>
         <input type="text" id="nome" name="nome" placeholder="✦ Seu nome" required>
@@ -95,46 +99,35 @@
         <p>Ao enviar este formulário, você concorda com nossa Política de Privacidade e aceita receber comunicações do Zênite.</p>
       </form>
     </section>
-    <section class="faq">
+
+    <!-- Cards de perguntas frequentes -->
+    <section>
       <h2>Perguntas Frequentes</h2>
       <div class="cards">
-        <article class="card">
+        <div class="card">
           <h3>Quanto tempo leva para implementar o Zênite?</h3>
           <p>A implementação básica leva de 4 a 6 semanas, incluindo configuração, treinamento da equipe e período de teste. Implementações enterprise podem levar até 3 meses.</p>
-        </article>
-        <article class="card">
+        </div>
+        <div class="card">
           <h3>É necessário hardware especial?</h3>
           <p>Não. O Zênite é 100% baseado em nuvem. Você precisa apenas de um computador ou tablet com acesso à internet e um navegador moderno.</p>
-        </article>
-        <article class="card">
+        </div>
+        <div class="card">
           <h3>Como é feito o treinamento da equipe?</h3>
           <p>Oferecemos treinamento presencial ou online, documentação completa, vídeos tutoriais e suporte contínuo para garantir que sua equipe aproveite ao máximo a plataforma.</p>
-        </article>
-        <article class="card">
+        </div>
+        <div class="card">
           <h3>O Zênite pode ser integrado com sistemas existentes?</h3>
           <p>Sim! Oferecemos API robusta para integração com sistemas de gestão municipal, plataformas de emergência e outras ferramentas que você já utiliza.</p>
-        </article>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
-    <section>
-      <p>LOGO</p>
-      <p>Inteligência preditiva para cidades mais resilientes</p>
-    </section>
-    <div class="footer-links">
-      <a href="./casos-reais.html">Casos Reais</a>
-      <a href="./comercializacao.html">Comercialização</a>
-      <a href="./sobre-zenite.html">Sobre Zênite</a>
-      <a href="./falaconosco.html">Fala Conosco</a>
-    </div>
-    <div class="footer-contato">
-      <p>Contato
-        São Paulo, Brasil
-        contato@zenite.com.br
-      </p>
-    </div>
-    <h2>Grupo PI Legal™️</h2>
-  </footer>
+  <!-- Aqui onde será incluido o footer via JS -->
+  <div id="footer-container"></div>
+  
+
+
+  <script src="../scripts/menu.js" defer></script>
 </body>
 </html>

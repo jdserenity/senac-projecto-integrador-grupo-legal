@@ -22,21 +22,31 @@
     </head>
 <body>
   <!-- Alterei de div para nav melhorando a semantica. coloquei 'a' lado a lado para evitar espaços imprevisiveis -->
+   
   <header>
-    <video loop autoplay muted playsinline disablePictureInPicture src="../assets/storm-loop-comprimido.mp4"></video>
+    
+    <video loop autoplay muted disablePictureInPicture src="../assets/storm-loop-comprimido.mp4"></video>
 
     <h1>Zênite</h1>
-      <nav aria-label="Menu principal">
+         <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      <nav id="menu">
         <a href="./casos-reais.html">Casos Reais</a>
         <a href="./comercializacao.html">Comercialização</a>
         <a href="./sobre-zenite.html">Sobre Zênite</a>
         <a href="./faleconosco.html">Fale Conosco</a>
       </nav>
 
-      <img class="pause-button" href="#começo-rolagem" loading="lazy" src="../assets/pause-button-128.png" alt="Controle video">
-      
-      <img id="botao-rolar" loading="lazy" src="../imagens/seta-baixo.png" alt="Botão para rolar para baixo">
+    <img class="pause-button" src="../assets/pause-button-128.png" alt="botao de play e pause para o video de fundo">
+
+    <img id="butao" src="../imagens/seta-baixo.png" alt="Botao para rolar para x da pagina">
   </header>
+
+
 
   <main>
     <!-- Inicio -->
