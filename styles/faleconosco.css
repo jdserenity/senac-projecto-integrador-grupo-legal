@@ -1,6 +1,4 @@
-h1 {
-    margin-block-start: 4.5rem;
-}
+h1 { position: static; }
 
 nav { margin-block-start: 0; }
 
@@ -14,6 +12,10 @@ header {
     padding: 1rem;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+}
+
+.hero {
+  background-color: var(--cor-principal1);
 }
 
 main { background-color: var(--cor-principal2); }
@@ -95,12 +97,9 @@ option { background-color: lightray; }
 
 .faq h2 { margin-block-end: 1rem; }
 
-.faq .cards {
-    padding: 0;
-}
+.faq .cards { padding: 0; }
 
-/* Teste do menu mobile */
- /* HEADER */
+/* Teste do menu mobile
     header{
       width:100%;
       height:70px;
@@ -121,7 +120,6 @@ option { background-color: lightray; }
       font-weight:bold;
     }
 
-    /* BOTÃO HAMBURGUER */
     .hamburger{
       width:35px;
       height:30px;
@@ -140,7 +138,6 @@ option { background-color: lightray; }
       transition:0.3s;
     }
 
-    /* MENU */
     .mobile-menu{
       position:fixed;
       top:0;
@@ -168,12 +165,10 @@ option { background-color: lightray; }
       color:#00bfff;
     }
 
-    /* MENU ATIVO */
     .mobile-menu.active{
       right:0;
     }
 
-    /* ANIMAÇÃO X */
     .hamburger.active span:nth-child(1){
       transform:rotate(45deg) translate(8px,8px);
     }
@@ -186,15 +181,15 @@ option { background-color: lightray; }
       transform:rotate(-45deg) translate(8px,-8px);
     }
 
-    /* CONTEÚDO */
     .content{
       padding-top:100px;
       text-align:center;
     }
 
-    /* SOMENTE MOBILE */
     @media(max-width:768px){
       .hamburger{
         display:flex;
       }
     }
+
+*/

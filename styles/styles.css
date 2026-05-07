@@ -1,3 +1,24 @@
+/* META */
+
+:root{
+  /* Cores principais */
+  --cor-principal1: #0B1F3A;
+  --cor-principal2: #2563EB;
+  --cor-principal3: #3882F6;
+  --cor-principal4: #7C3AED;
+  --cor-principal5: #F8FAFC;
+  /* Cores Neutras */
+  --cor-neutra1: #020617;
+  --cor-neutra2: #1E293B;
+  --cor-neutra3: #64748B;
+  --cor-neutra4: #E2E8F0;
+  --cor-neutra5: #FFFFFF;
+  /* Fontes */
+  --fonte-titulos: 'Poppins', sans-serif, system-ui;
+  /* Gradiente */
+  --gradiente: linear-gradient(to right, #0B1F3A, #2563EB, #7C3AED) 1;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0; padding: 0;
