@@ -1,28 +1,7 @@
-:root{
-  /* Cores principais */
-  --cor-principal1: #0B1F3A;
-  --cor-principal2: #2563EB;
-  --cor-principal3: #3882F6;
-  --cor-principal4: #7C3AED;
-  --cor-principal5: #F8FAFC;
-  /* Cores Neutras */
-  --cor-neutra1: #020617;
-  --cor-neutra2: #1E293B;
-  --cor-neutra3: #64748B;
-  --cor-neutra4: #E2E8F0;
-  --cor-neutra5: #FFFFFF;
-  /* Fontes */
-  --fonte-titulos: 'Poppins', sans-serif, system-ui;
-  /* Gradiente */
-  --gradiente: linear-gradient(to right, #0B1F3A, #2563EB, #7C3AED) 1;
-}
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0; padding: 0;
 }
-
-/* TODO */
 
 html {
   font-size: 16px;
@@ -36,16 +15,10 @@ h1, nav a { color: white; }
 h1 { font-size: 3rem; }
 
 a { text-decoration: none; }
-}
-
-/* HEADER */
 
 h1, nav {text-shadow: 0 0 10px black;}
 
-a {
-  text-decoration: none;
-  color: white;
-}
+
 
 header{
   display: flex;
@@ -81,8 +54,7 @@ h1{
   padding-block-end: 0;
   border-block-end: 2px solid transparent;
   
-  /* tipografia */
-  font-family: var(--fonte-titulos);
+  border-image: linear-gradient(to right, #0B1F3A, #2563EB, #7C3AED) 1;
 }
 
 #butao{
@@ -114,20 +86,14 @@ nav {
   gap: 10px;
   z-index: 1;
   
-  /* estilziação */
-  gap: 20px;
-  margin-block-start: 10vh ;
+  
+  width: 95%;
 
-  /* Tamanho */
-  width: 85%;
-  height: 15%;
+  margin-block-start: 5rem ;
 
   a{
-    /* Fonte */
-    font-size: clamp(1rem, 2vw, 2rem );
-    color: white;
-    flex-basis: 100%;
-    text-decoration: none;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.048);
     text-align: center;
     margin-block: auto;
     /* flex-basis: 20%; */
@@ -144,8 +110,6 @@ nav {
   height: 30px;
   cursor: pointer;
 }
-
-/* main */
 
 /* Estilização Index */
 .start-section {  
@@ -300,8 +264,7 @@ nav {
   }
 }
 
-/* FOOTER */
-
+/* Footer */
 footer {
   background-color: black;
   color: white;
