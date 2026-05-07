@@ -57,7 +57,7 @@ h1{
   border-image: linear-gradient(to right, #0B1F3A, #2563EB, #7C3AED) 1;
 }
 
-#butao{
+#botao-rolar{
   z-index: 1;
 
   width: 45px;

@@ -12,14 +12,17 @@ Scopo:
   - Tem que entender o que fazer
 
 Distribução de tarefas por feature:
-- Prazos para cada etapa (Raquel)
+- (Prazos para cada etapa (Raquel))?
 - ~~Conteudo (João)~~ ✓
 - ~~Sitemap (JD)~~ ~✓
 - ~~Wireframe (Yuri)~~ ✓
 - ~~Animação de tempestade rolando na pagina (JD)~~ ✓
 - ~~Estilos e identidade visual (Raquel)~~ ✓
 - Rolagem conectado com o video da pagina casa (JD)
-- Mapa 3D no index/home (alguém)
+- Mapa 3D no index/home (JD)
+- HTML + CSS pagina Comercialização (Yuri)
+- Refatorar HTML todo site (Jõao)
+- JS para botão ▽▽▽ no index (Jõao)
 
 Sitemap: https://wireframe.cc/X5MNMM
 

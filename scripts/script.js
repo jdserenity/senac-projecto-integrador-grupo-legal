@@ -12,5 +12,6 @@ pauseButton.addEventListener("click", () => {
   heroVideo.pause(); pauseButton.src = "../assets/play-button-128.png";
 })
 
-
-
+scrollButton.addEventListener('click', () =>{
+  startSection.scrollIntoView({behavior: "smooth"});
+})
