@@ -22,7 +22,7 @@ Distribução de tarefas por feature:
 - Mapa 3D no index/home (JD)
 - HTML + CSS pagina Comercialização (Yuri)
 - Refatorar HTML todo site (Jõao)
-- JS para botão ▽▽▽ no index (Jõao)
+- ~~JS para botão ▽▽▽ no index (Jõao)~~ ✓
 
 Sitemap: https://wireframe.cc/X5MNMM
 
