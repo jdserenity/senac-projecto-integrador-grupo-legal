@@ -16,12 +16,13 @@
   /* Fontes */
   --fonte-titulos: 'Poppins', sans-serif, system-ui;
   /* Gradiente */
-  --gradiente: linear-gradient(to right, #0B1F3A, #2563EB, #7C3AED) 1;
+  --gradiente: linear-gradient(to right, #0B1F3A, #2563EB, #7C3AED);
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -29,63 +30,96 @@ html {
   font-family: system-ui, sans-serif;
   /* scroll-behavior: smooth; */
   overflow: auto;
+  background-color: black;
 }
 
 body { overflow-x: hidden; } /* Evitando que a pagina crie uma barra lateral */
 
-a { text-decoration: none; }
-
-h1, nav { text-shadow: 0 0 10px black; }
-
-h1, nav a { color: white; }
-
-h1 { font-size: 3rem; }
+h1, nav, nav a { 
+  text-shadow: 0 0 10px black;
+  color: var(--cor-principal5);
+  text-decoration: none;
+}
 
 header {
   display: flex;
   justify-content: center;
-
   position: relative;
-  
   width: 100vw;
   height: 100vh;
   /* colocando imagem de fundo para evitar mostrar um fundo estranho antes do video começar */
-  background-image: url(../imagens/fundo-video.jpg);
 }
 
 header video {
+  background-image: url(../imagens/fundo-video.jpg);
   position: absolute;
-  z-index: 0;
-  
+  z-index: 0;  
   width: 100vw;
   height: 100vh;
+  opacity: 0.5;
   object-fit: cover;
 }
 
 h1 {
   position: absolute;
-  top: 40vh;
+  top: 20vh;
 
-  font-size: 12vw ;
-  
-  padding-block-end: 0;
-  border-block-end: 2px solid transparent;
-  border-image: var(--gradiente);
+  font-size: clamp(2rem, 15vw, 8rem);
 
-  /* tipografia */
-  font-size: 12vw ;
+  /* espaço para a linha */
+  padding-bottom: 1rem;
+
   font-family: var(--fonte-titulos);
+}
+
+h1::after {
+  content: '';
+
+  position: absolute;
+  top: 20vh;
+
+  /* faz a linha começar antes do texto */
+  left: -15vw;
+
+  /* aumenta além do tamanho do h1 */
+  width: calc(100% + 30vw);
+
+  height: 3px;
+
+  background: var(--gradiente);
+}
+
+.cta-header{
+  position: absolute;
+  top: 50vh;
+  text-align: center;
+  font-size: clamp(1rem, 3vw, 4rem);
+  color: var(--cor-neutra4);
+  text-shadow: 0 0 10px black;
+
+  p{
+    margin-block: 3rem ;
+    font-size: clamp(1rem, 2vw, 4rem);
+    margin-inline: 10px;
+  }
+
+  a{
+    color: var(--cor-principal5);
+    text-decoration: none;
+    background-color: var(--cor-neutra1);
+    &::hover{ color: yellow; };
+  }
 }
 
 #botao-rolar{
   /*Tamanho  */
-  width: 45px;
-  height: 45px;
+  width: 4rem;
+  height: auto;
   
   /* Posição */
   z-index: 1;
   position: absolute;
-  top: 80vh;
+  top: 90vh;
   
   /* Animação */
   animation-name: sobe_desce;
@@ -106,77 +140,67 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: space-between;
-  gap: 10px;
+  gap: 5px;
 
   /* Posição */
   z-index: 1;
   
-  /* Tamanho */
-  width: 95%;
-  height: 15%;
 
-  margin-block-start: 5rem ;
+  a{font-size: clamp(10px, 3.5vw, 20px);}
+  /* margin-block-start: 1rem ; */
 }
 
-nav a {
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.048);
-  text-align: center;
-  margin-block: auto;
-  /* flex-basis: 20%; */
-  border-radius: 5px;
-  padding: 1vw 5px;
-  box-shadow: 0 0 10px black;
-  font-size: 3.4vw;
+.links-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsla(214, 68%, 14%, 0.65);
+  box-shadow:  0 0 20px black;
+  width: 100vw;
+  height: 3rem;
 }
 
-.pause-button {
-  position: absolute; z-index: 1; right: 1rem; top: 1rem;
+/* .pause-button {
+  position: absolute; z-index: 1; right: 2rem; top: 5rem;
   width: 30px;
   height: 30px;
   cursor: pointer;
-}
+} */
 
 /* Estilização Index */
 .start-section {  
   padding: 5px;
-  background-color: #2563eb;
+  padding-inline-start: 2rem;
+  background-color: var(--cor-principal1);
+  color: white;
   
   h2 {
     font-size: clamp(1.5rem, 3vw, 3rem);
     margin-block: 1rem;
     color: white;
   }
-  
-  p {
+
+  a{
+    margin-block:1rem;
+    padding: 1rem 2rem;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
     color: white;
   }
 
   .conhecer {
-    margin-block:1rem;
-    padding: 1rem 2rem;
-    font-size: 0.75rem;
     background-color: white;
     color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
   }
   
-  .conhecer::after {
-    content: ' →';
-  }
+  .conhecer::after { content: ' →'; }
   
-  .saiba-mais{
-    padding: 1rem 2rem;
-    font-size: 0.70rem;
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  .saiba-mais{ background-color: transparent; }
+
+  .start-buttons{padding-block: 2rem;}
 }
 
 .problemas-que-resolvemos{
@@ -328,12 +352,3 @@ footer a:hover {
 }
 
 .logo-original { width: 5vw; }
-
-@media (min-width:1000px) {
-  nav{
-    a{
-      font-size: 2.5vw;
-      padding: 10px;
-    }
-  }
-}
