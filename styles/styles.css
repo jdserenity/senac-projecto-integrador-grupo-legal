@@ -166,6 +166,7 @@ nav {
   }
   
   a, a #cta-transformar{
+    font-family: 'Inter', sans-serif;
     display: inline-block;
     position: relative;
     z-index: 999;
@@ -173,17 +174,19 @@ nav {
     font-size: clamp(1rem, 4vw, 1.5rem);
     width: fit-content;
     text-decoration: none;
-    background-color: var(--cor-principal3);
+    background-color: hsla(217, 33%, 17%, 0.7);
     border-radius: 10px;
     padding: 5px 20px;
     box-shadow: 0 0 10px black;
     text-shadow: none;
     margin: 10px;
+    border: 1px solid var(--cor-principal2);
+    &::after{content: ' →';}
   }
 
   a:hover, a:focus-visible{ color: rgb(223, 223, 141); }     
   
-  #cta-transformar{ background-color: var(--cor-principal2); } 
+  /* #cta-transformar{ background-color: var(--cor-principal2); }  */
   
 }
 /* a img{ width: 30px; height: 30px;} */
@@ -194,7 +197,7 @@ nav {
   height: 52px;  
   /* Posição */
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 90vh;
   
   /* Animação */
@@ -211,157 +214,42 @@ nav {
   cursor: pointer;
 }
 
-/* Estilização Index */
-.start-section {  
-  padding: 5px;
-  padding-inline-start: 2rem;
-  background-color: var(--cor-principal1);
-  color: white;
-  
-  h2 {
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    margin-block: 1rem;
-    color: white;
-  }
-
-  a{
-    margin-block:1rem;
-    padding: 1rem 2rem;
-    font-size: 0.75rem;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 2px solid white;
-    border-radius: 5px;
-    color: white;
-  }
-
-  .conhecer {
-    background-color: white;
-    color: black;
-  }
-  
-  .conhecer::after { content: ' →'; }
-  
-  .saiba-mais{ background-color: transparent; }
-
-  .start-buttons{padding-block: 2rem;}
-}
-
-.problemas-que-resolvemos{
-  h2{
-    text-align: center;
-    margin-block: 12px;
-  }
-  p{
-    text-align: center;
-    margin-block:8px
-  }
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-block: 2rem;
-}
-
-.card {
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  padding: 1rem;
-  width: 300px;
-  border: solid 2px black;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  text-align: center;
-}
-
-.titulo-card {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
 .como-funciona {
   
-  h3 {
-    padding-inline: 5px;
-    margin-block: 12px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--cor-principal1);
+  color: var(--cor-principal5);
+  text-shadow: 0 0 10px black;
+  h2, p{
+    width: 100%;
+    text-align: center;
   }
   
-  p {
-    padding-inline: 5px;
-    margin-block:8px
-  }
 }
 
-.mapa-interativo{
-  background-color: #f0f0f0;
-  border-radius: 10px;
+.card{
+  flex-basis: clamp(30%, 300px, 600px);
+  display: flex;
+  gap: 1rem;
+  color: var(--cor-principal5);
+  text-shadow: 0 0 10px black;
+  /* width: clamp(200px, 30vw, 400px); */
   padding: 1rem;
-  width: 80%;
-  margin: auto;
-  border: solid 2px black;
-  
+  border-radius: 10px;  
+}
+
+.texto-card{
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.compromisso{
-  h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  p {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  article {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    padding: 1rem;
-    border:solid 2px black;
-    margin-block:10px ;
-    width: 90%;
-    margin-inline:auto;
-  }
-
-  ul {
-    list-style: none;
-  }
-}
-
-.pronto-para-transformar {
-  background-color: #2563EB;
-  padding: 1rem;
-
-  h3 {
-    color: white;
-    text-align: center;
-  }
-
-  p {
-    color: white;
-  }
-
-  button {
-    padding: 1rem 2rem;
-    font-size: 0.70rem;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer; 
-    margin-block: 12px;
-  }
+  justify-content: space-around;
 }
 
 /* Footer */
@@ -372,8 +260,11 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
   height: 200px;
+  a {
+    color: white;
+    &:hover {color: yellow;}
+  }
 }
 
 .footer-links {
@@ -382,15 +273,9 @@ footer {
   gap: 0.5rem;
 }
 
-footer a {
-  color: white;
-}
-
-footer a:hover {
-  color: yellow;
-}
-
 .logo-original { width: 5vw; }
+
+
 
 @keyframes sobe_desce{
   from{transform: translateY(10px);}
