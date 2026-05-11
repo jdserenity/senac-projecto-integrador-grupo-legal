@@ -31,6 +31,7 @@ html {
   /* scroll-behavior: smooth; */
   overflow: auto;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 body { overflow-x: hidden; } /* Evitando que a pagina crie uma barra lateral */
@@ -72,21 +73,79 @@ h1 {
   font-family: var(--fonte-titulos);
 }
 
-h1::after {
+/* linha com gradiente abaixo do titulo */
+.linha-gradiente::after {
   content: '';
-
+  
   position: absolute;
   top: 20vh;
-
+  
   /* faz a linha começar antes do texto */
   left: -15vw;
-
+  
   /* aumenta além do tamanho do h1 */
   width: calc(100% + 30vw);
-
-  height: 3px;
-
+  
+  height: 5px;
+  
   background: var(--gradiente);
+}
+
+h1::after{
+  /* animação para a linha crescer da esquerda para a direita */
+  animation-name: transicao_barra_links;
+  animation-duration: 10s;
+  transition: ease-in;
+  /* animation-fill-mode: backwards; */
+} 
+
+nav a{
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+nav .linha-gradiente::after{
+  position: absolute;
+  height: 3px;
+  width: 120%;
+  left: -10%;
+  top: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover, nav a:focus-visible{
+  transform: scale(0.95);
+  &::after{
+    animation-name: transicao_barra_links;
+    animation-duration: 0.3s;
+    opacity: 1;
+  }
+}
+
+nav {
+  /* Flex */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 5px;
+
+  /* Posição */
+  z-index: 1;
+  
+
+  a{font-size: clamp(7px, 3.2vw, 30px);}
+  /* margin-block-start: 1rem ; */
+}
+
+.links-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--cor-principal1);
+  box-shadow:  0 0 20px black;
+  width: 100vw;
+  height: 3rem;
 }
 
 .cta-header{
@@ -98,26 +157,43 @@ h1::after {
   text-shadow: 0 0 10px black;
 
   p{
-    margin-block: 3rem ;
+    user-select: none;
+    z-index: 999;
+    position: relative;
     font-size: clamp(1rem, 2vw, 4rem);
     margin-inline: 10px;
+    margin-block: 1rem;
+  }
+  
+  a, a #cta-transformar{
+    display: inline-block;
+    position: relative;
+    z-index: 999;
+    color: var(--cor-neutra5);
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    width: fit-content;
+    text-decoration: none;
+    background-color: var(--cor-principal3);
+    border-radius: 10px;
+    padding: 5px 20px;
+    box-shadow: 0 0 10px black;
+    text-shadow: none;
+    margin: 10px;
   }
 
-  a{
-    color: var(--cor-principal5);
-    text-decoration: none;
-    background-color: var(--cor-neutra1);
-    &::hover{ color: yellow; };
-  }
+  a:hover, a:focus-visible{ color: rgb(223, 223, 141); }     
+  
+  #cta-transformar{ background-color: var(--cor-principal2); } 
+  
 }
+/* a img{ width: 30px; height: 30px;} */
 
 #botao-rolar{
   /*Tamanho  */
-  width: 4rem;
-  height: auto;
-  
+  width: 52px;
+  height: 52px;  
   /* Posição */
-  z-index: 1;
+  z-index: 999;
   position: absolute;
   top: 90vh;
   
@@ -134,38 +210,6 @@ h1::after {
   border-radius: 100%;
   cursor: pointer;
 }
-
-nav {
-  /* Flex */
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 5px;
-
-  /* Posição */
-  z-index: 1;
-  
-
-  a{font-size: clamp(10px, 3.5vw, 20px);}
-  /* margin-block-start: 1rem ; */
-}
-
-.links-menu{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: hsla(214, 68%, 14%, 0.65);
-  box-shadow:  0 0 20px black;
-  width: 100vw;
-  height: 3rem;
-}
-
-/* .pause-button {
-  position: absolute; z-index: 1; right: 2rem; top: 5rem;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-} */
 
 /* Estilização Index */
 .start-section {  
@@ -346,9 +390,15 @@ footer a:hover {
   color: yellow;
 }
 
+.logo-original { width: 5vw; }
+
 @keyframes sobe_desce{
   from{transform: translateY(10px);}
   to{transform: translateY(-10px);}
 }
 
-.logo-original { width: 5vw; }
+@keyframes transicao_barra_links {
+  from { transform: scaleX(0.1) ; }
+  to { transform: scaleX(1) ; }
+}
+
