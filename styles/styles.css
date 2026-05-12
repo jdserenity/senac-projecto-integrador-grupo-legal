@@ -86,18 +86,19 @@ h1 {
   /* aumenta além do tamanho do h1 */
   width: calc(100% + 30vw);
   
-  height: 5px;
+  height: 3px;
   
   background: var(--gradiente);
 }
 
-h1::after{
-  /* animação para a linha crescer da esquerda para a direita */
-  animation-name: transicao_barra_links;
-  animation-duration: 10s;
-  transition: ease-in;
-  /* animation-fill-mode: backwards; */
-} 
+.como-funciona h2 {position: relative;}
+
+.como-funciona .linha-gradiente::after {
+  position: absolute;
+  top: 200%;
+  left: 10%;
+  width: 80%;
+}
 
 nav a{
   position: relative;
@@ -181,14 +182,14 @@ nav {
     text-shadow: none;
     margin: 10px;
     border: 1px solid var(--cor-principal2);
-    &::after{content: ' →';}
+    /* &::after{content: ' →';} */
   }
 
   a:hover, a:focus-visible{ color: rgb(223, 223, 141); }     
+}
   
   /* #cta-transformar{ background-color: var(--cor-principal2); }  */
   
-}
 /* a img{ width: 30px; height: 30px;} */
 
 #botao-rolar{
@@ -214,36 +215,57 @@ nav {
   cursor: pointer;
 }
 
-.como-funciona {
-  
+.como-funciona { 
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   font-size: clamp(0.8rem, 2vw, 1.5rem);
-  height: 50vh;
+  height: 100vh;
+  min-height: fit-content;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
   padding: 1rem;
-  background-color: var(--cor-principal1);
+  background-color: var(--cor-neutra1);
+  background-image: url(../imagens/zenite-logo-original.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   color: var(--cor-principal5);
   text-shadow: 0 0 10px black;
   h2, p{
     width: 100%;
     text-align: center;
   }
-  
+
+  h2{
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-family: var(--fonte-titulos);
+  }
+
+  p{
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    /* width: 80%; */
+    margin: 0 auto;
+  }
 }
 
 .card{
-  flex-basis: clamp(30%, 300px, 600px);
+  flex-basis: clamp(30%, 100%, 600px);
   display: flex;
   gap: 1rem;
   color: var(--cor-principal5);
   text-shadow: 0 0 10px black;
-  /* width: clamp(200px, 30vw, 400px); */
   padding: 1rem;
   border-radius: 10px;  
+  user-select: none;
+  &:hover{
+    transform: scale(1.005);
+    transition: ease-in-out 0.3s;
+  }
+
+  p{
+    text-align: left;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
 }
 
 .texto-card{
