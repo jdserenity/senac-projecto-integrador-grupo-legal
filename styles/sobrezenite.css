@@ -1,0 +1,170 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sobre-zenith{
+    background-color: #020617;
+    padding: 20px;
+    h2{
+        color: #2563EB;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    h3{
+        color: #fff;
+        font-weight: 100;
+        font-size: 2rem;
+        font-family: "Poppins", sans-serif;
+        margin-block: 2rem;
+    }
+    p{
+        margin-block-start: 1.2rem;
+        color:#fff;
+        font-size: 1.2rem;
+    }
+}
+.nossos-objetivos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E2EBF0;
+    h2{
+        margin-block: 2rem;
+        font-size: 2.5rem;
+        color: #2563EB;
+        font-weight: 100;
+        font-family: "Poppins", sans-serif;
+    }
+    article{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        border: solid 1px #000;
+        margin-block: 1rem;
+        width: 70%;
+        p{
+            margin-inline: 1.5rem;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+    }
+}
+.impacto-comprovado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E2EBF0;
+    h2{
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        font-size: 2rem;
+        color: #2563EB;
+        font-weight: 100;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        b{
+            color: #000;
+        }
+    }
+    .card{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        border: solid 1px #000;
+        margin-block: 1rem;
+        width: 70%;
+        h3{
+            font-size: 2rem;
+            color: #3882F6;
+            font-weight: 100;
+            text-shadow: #3882F6 0px 0px 5px;
+            margin-inline: 15px;
+        }
+        p{
+            color:#000;
+            font-size: 1.2rem;
+            span{
+                color: #3882f6;
+                font-weight: 100;
+            }
+        }
+    }
+}
+.tecnologia-inovadora{
+    background-color: #020617;
+    color: #fff;
+    padding: 10px;
+    display:flex;
+    gap: 12px;
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3,p{
+            text-align: center;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+.valor-estrategico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E2EBF0;
+    h2{
+        color: #2563EB;
+        font-size: 2rem;
+        font-family: "Poppins", sans-serif;
+        margin-block-start: 1rem;
+    }
+    article{
+        border-block-end: 2px solid #000;
+        padding: 20px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    article:nth-child(5){
+        border-block:none;
+    }
+}
+.pronto-para-transformar{
+   background:
+        radial-gradient(circle at right, #7C3AED38, transparent 35%),
+        linear-gradient(
+        90deg,
+        #7c3aed 0%,
+        #2563EB 45%,
+        #0B1F3A 100%
+    );
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+    button{
+        background-color: #1E293B;
+        color: #fff;
+        border: solid 2px #2563EB;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-weight: 300;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-inline:auto;
+        width: 50%;
+    }
+}
