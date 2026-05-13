@@ -65,7 +65,7 @@ h1 {
   position: absolute;
   top: 20vh;
 
-  font-size: clamp(2rem, 15vw, 8rem);
+  font-size: clamp(4rem, 10vw, 16rem);
 
   /* espaço para a linha */
   padding-bottom: 1rem;
@@ -91,13 +91,13 @@ h1 {
   background: var(--gradiente);
 }
 
-.como-funciona h2 {position: relative;}
+.cabecalho h2{position: relative;}
 
-.como-funciona .linha-gradiente::after {
+.cabecalho .linha-gradiente::after {
   position: absolute;
-  top: 200%;
-  left: 10%;
-  width: 80%;
+  top: 90%;
+  left: 0;
+  width: 100%;
 }
 
 nav a{
@@ -116,7 +116,7 @@ nav .linha-gradiente::after{
 }
 
 nav a:hover, nav a:focus-visible{
-  transform: scale(0.95);
+  color: var(--cor-principal2);
   &::after{
     animation-name: transicao_barra_links;
     animation-duration: 0.3s;
@@ -134,9 +134,7 @@ nav {
   /* Posição */
   z-index: 1;
   
-
-  a{font-size: clamp(7px, 3.2vw, 30px);}
-  /* margin-block-start: 1rem ; */
+  a{font-size: clamp(1.2rem, 2vw, 60px);}
 }
 
 .links-menu{
@@ -146,14 +144,14 @@ nav {
   background-color: var(--cor-principal1);
   box-shadow:  0 0 20px black;
   width: 100vw;
-  height: 3rem;
+  height: fit-content;
 }
 
 .cta-header{
   position: absolute;
   top: 50vh;
   text-align: center;
-  font-size: clamp(1rem, 3vw, 4rem);
+  font-size: clamp(1rem, 3vw, 8rem);
   color: var(--cor-neutra4);
   text-shadow: 0 0 10px black;
 
@@ -161,7 +159,7 @@ nav {
     user-select: none;
     z-index: 999;
     position: relative;
-    font-size: clamp(1rem, 2vw, 4rem);
+    font-size: clamp(1rem, 1.6vw, 8rem);
     margin-inline: 10px;
     margin-block: 1rem;
   }
@@ -172,7 +170,7 @@ nav {
     position: relative;
     z-index: 999;
     color: var(--cor-neutra5);
-    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-size: clamp(1rem, 1.8vw, 6rem);
     width: fit-content;
     text-decoration: none;
     background-color: hsla(217, 33%, 17%, 0.7);
@@ -185,13 +183,9 @@ nav {
     /* &::after{content: ' →';} */
   }
 
-  a:hover, a:focus-visible{ color: rgb(223, 223, 141); }     
+  a:hover, a:focus-visible{ color:var(--cor-principal2); }     
 }
   
-  /* #cta-transformar{ background-color: var(--cor-principal2); }  */
-  
-/* a img{ width: 30px; height: 30px;} */
-
 #botao-rolar{
   /*Tamanho  */
   width: 52px;
@@ -219,12 +213,13 @@ nav {
   isolation: isolate;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  font-size: clamp(0.8rem, 2vw, 3rem);
   height: 100vh;
   min-height: fit-content;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem;
   background-color: var(--cor-neutra1);
   color: var(--cor-principal5);
@@ -235,12 +230,12 @@ nav {
   }
   
   h2{
-    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-size: clamp(1.5rem, 4vw, 8rem);
     font-family: var(--fonte-titulos);
   }
   
   p{
-    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 5rem);
     /* width: 80%; */
     margin: 0 auto;
   }
@@ -252,12 +247,15 @@ nav {
 }
 
 .card{
-  flex-basis: clamp(30%, 100%, 600px);
+  /* flex-basis: 20%; */
+  /* height: 20vh; */
+  /* width: 20vw; */
   display: flex;
   gap: 1rem;
   color: var(--cor-principal5);
   text-shadow: 0 0 10px black;
   padding: 1rem;
+  padding-block-end: 2rem;
   border-radius: 10px;  
   user-select: none;
   transition: ease-in-out 0.1s;
@@ -267,23 +265,9 @@ nav {
   
   p{
     text-align: left;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 6rem);
   }
 }
-
-/* .como-funciona::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(../imagens/imagens-zenite/pagina2_imagem1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-  opacity: 0.2;
-} */
 
 .texto-card{
   display: flex;
@@ -291,11 +275,68 @@ nav {
   justify-content: space-around;
 }
 
+.problemas-que-resolvemos{
+  color: var(--cor-principal5);
+  height: 50vh;
+  min-height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.cabecalho{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  h2{
+    font-size: clamp(1.5rem, 4vw, 8rem);
+    font-family: var(--fonte-titulos);
+  }
+}
+.problemas-que-resolvemos, .compromisso {
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
+  .card{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--cor-neutra2);
+    box-shadow: 0 0 20px black;
+    border-inline-end: solid 10px var(--cor-principal2);
+  }
+}
+
+
+.compromisso{
+  color: var(--cor-principal5);
+  height: 50vh;
+  min-height: fit-content;
+  ul{
+    margin-inline-start: 1rem ;
+  }
+
+  .card{
+    flex: 1 1 30%;
+    border-inline-end: solid 10px var(--cor-principal4);
+  }
+}
+
 /* Footer */
 footer {
   background-color: black;
   color: white;
-  font-size: clamp(10px, 1vw, 5rem);
+  font-size: clamp(10px, 1vw, 10rem);
   display: flex;
   justify-content: space-around;
   align-items: center;
