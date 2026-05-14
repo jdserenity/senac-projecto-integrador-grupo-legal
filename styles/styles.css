@@ -49,16 +49,15 @@ header {
   width: 100vw;
   height: 100vh;
   /* colocando imagem de fundo para evitar mostrar um fundo estranho antes do video começar */
-}
-
-header video {
-  background-image: url(../imagens/fundo-video.jpg);
-  position: absolute;
-  z-index: 0;  
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.5;
-  object-fit: cover;
+  video {
+    background-image: url(../imagens/fundo-video.jpg);
+    position: absolute;
+    z-index: 0;  
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    object-fit: cover;
+  }
 }
 
 h1 {
@@ -72,7 +71,6 @@ h1 {
 
   font-family: var(--fonte-titulos);
 }
-
 /* linha com gradiente abaixo do titulo */
 .linha-gradiente::after {
   content: '';
@@ -115,26 +113,26 @@ nav .linha-gradiente::after{
   transition: opacity 0.3s ease;
 }
 
-nav a:hover, nav a:focus-visible{
-  color: var(--cor-principal2);
-  &::after{
-    animation-name: transicao_barra_links;
-    animation-duration: 0.3s;
-    opacity: 1;
-  }
-}
-
 nav {
   /* Flex */
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   gap: 5px;
-
+  
   /* Posição */
   z-index: 1;
   
   a{font-size: clamp(1.2rem, 2vw, 60px);}
+
+  a:hover, a:focus-visible{
+    color: var(--cor-principal2);
+    &::after{
+      animation-name: transicao_barra_links;
+      animation-duration: 0.3s;
+      opacity: 1;
+    }
+  }
 }
 
 .links-menu{
@@ -209,14 +207,22 @@ nav {
   cursor: pointer;
 }
 
-.como-funciona { 
+.compromisso{
+  height: 50vh;
+  min-height: fit-content;
+  ul{
+    margin-inline-start: 1rem ;
+  }
+}
+
+.como-funciona{height: 100vh;}
+
+.como-funciona, .compromisso { 
+  display: flex;
   isolation: isolate;
   position: relative;
-  display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   font-size: clamp(0.8rem, 2vw, 3rem);
-  height: 100vh;
   min-height: fit-content;
   align-items: center;
   justify-content: space-around;
@@ -224,25 +230,28 @@ nav {
   background-color: var(--cor-neutra1);
   color: var(--cor-principal5);
   text-shadow: 0 0 10px black;
-  h2, p{
-    width: 100%;
-    text-align: center;
-  }
-  
-  h2{
-    font-size: clamp(1.5rem, 4vw, 8rem);
-    font-family: var(--fonte-titulos);
-  }
-  
-  p{
-    font-size: clamp(1rem, 2vw, 5rem);
-    /* width: 80%; */
-    margin: 0 auto;
-  }
+
   img{
     width: 150px;
     height: auto;
     box-shadow: 0 0 20px var(--cor-neutra1);
+  }
+}
+
+.como-funciona, .compromisso{
+  h2, p{
+    width: 100%;
+    text-align: center;
+  }
+
+  h2{
+    font-size: clamp(1.5rem, 4vw, 8rem);
+    font-family: var(--fonte-titulos);
+  }
+
+  p{
+    font-size: clamp(1rem, 2vw, 5rem);
+    margin: 0 auto;
   }
 }
 
@@ -288,15 +297,12 @@ nav {
 
 .cabecalho{
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
-  h2{
-    font-size: clamp(1.5rem, 4vw, 8rem);
-    font-family: var(--fonte-titulos);
-  }
 }
+
 .problemas-que-resolvemos, .compromisso {
   .cards{
     display: flex;
@@ -316,22 +322,6 @@ nav {
     border-inline-end: solid 10px var(--cor-principal2);
   }
 }
-
-
-.compromisso{
-  color: var(--cor-principal5);
-  height: 50vh;
-  min-height: fit-content;
-  ul{
-    margin-inline-start: 1rem ;
-  }
-
-  .card{
-    flex: 1 1 30%;
-    border-inline-end: solid 10px var(--cor-principal4);
-  }
-}
-
 /* Footer */
 footer {
   background-color: black;
@@ -354,8 +344,6 @@ footer {
 }
 
 .logo-original { width: 5vw; }
-
-
 
 @keyframes sobe_desce{
   from{transform: translateY(10px);}
