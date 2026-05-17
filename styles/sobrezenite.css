@@ -161,6 +161,7 @@ a {
 .hero-sobre{
     background: var(--dark);
     /* padding: 120px 0; */
+   
 }
 
 .hero-grid{
@@ -171,6 +172,7 @@ a {
     /* gap: 64px; */
     text-align: center;
     gap: 2rem;
+    
 }
 
 .tag{
@@ -446,6 +448,7 @@ a {
 @media (min-width: 992px){
     .hero-grid {
         grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
     }
 
     .hero-content {
@@ -464,9 +467,35 @@ a {
     }
 
     .tecnologia-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hero-sobre {
+        background-image: url(../imagens/imagens-zenite/pagina2_banner-sobre-zenith.jpg);
+    
+        background-repeat: no-repeat;
+
+        /* background-position: right bottom; */
+
+        background-size: cover;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-content h2{
+        font-size: clamp(1.5rem, 3vw, 4rem)
+    }
+    .hero-content h3{
+        font-size: clamp(2.5rem, 4vw, 4rem)
     }
 
+}
+@media(min-width:1200px){
+    .pronto-para-transformar p{
+        font-size: clamp(1.5rem, 2vw, 4rem);
+    }
+    .pronto-para-transformar h2{
+        font-size: clamp(2rem, 3vw, 4rem);
+    }
 }
 
 @media (max-width: 768px) {
