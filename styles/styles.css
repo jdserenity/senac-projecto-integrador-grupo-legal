@@ -1,4 +1,4 @@
-/* META */
+  /* META */
 
 :root {
   /* Cores principais */
@@ -36,6 +36,24 @@ html {
 
 body { overflow-x: hidden; } /* Evitando que a pagina crie uma barra lateral */
 
+main::before{
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+
+  z-index: -1;
+}
+
+main{
+  position: relative;
+  isolation: isolate;
+  background-image: url(/senac-projecto-integrador-grupo-legal/imagens/pexels-photo-4823232.jpeg);
+}
+
 h1, nav, nav a { 
   text-shadow: 0 0 10px black;
   color: var(--cor-principal5);
@@ -48,27 +66,31 @@ header {
   position: relative;
   width: 100vw;
   height: 100vh;
+  /* background-color: #020617; */
   /* colocando imagem de fundo para evitar mostrar um fundo estranho antes do video começar */
   video {
     background-image: url(../imagens/fundo-video.jpg);
     position: absolute;
-    z-index: 0;  
+    z-index: -2;  
     width: 100vw;
     height: 100vh;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     object-fit: cover;
+    animation-name: esmaecer;
+    animation-timing-function: ease-in;
+    animation-duration: 12s;
+    animation-fill-mode: forwards;
   }
 }
-
 h1 {
   position: absolute;
   top: 20vh;
-
+  
   font-size: clamp(4rem, 10vw, 16rem);
-
+  
   /* espaço para a linha */
   padding-bottom: 1rem;
-
+  
   font-family: var(--fonte-titulos);
 }
 /* linha com gradiente abaixo do titulo */
@@ -98,21 +120,6 @@ h1 {
   width: 100%;
 }
 
-nav a{
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-
-nav .linha-gradiente::after{
-  position: absolute;
-  height: 3px;
-  width: 120%;
-  left: -10%;
-  top: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
 nav {
   /* Flex */
   display: flex;
@@ -121,17 +128,32 @@ nav {
   gap: 5px;
   
   /* Posição */
-  z-index: 1;
+  /* z-index: 2; */
   
-  a{font-size: clamp(1.2rem, 2vw, 60px);}
-
-  a:hover, a:focus-visible{
-    color: var(--cor-principal2);
-    &::after{
-      animation-name: transicao_barra_links;
-      animation-duration: 0.3s;
-      opacity: 1;
+  a{
+    font-size: clamp(1.2rem, 2vw, 60px);
+    position: relative;
+    transition: 0.3s ease-in-out;
+    
+    &:hover, &:focus-visible{
+      color: var(--cor-principal2);
+      text-shadow: 0 0 10px #f8fafc49;
+      &::after{
+        animation-name: transicao_barra_links;
+        animation-duration: 0.3s;
+        opacity: 1;
+      }
     }
+  }
+  
+  .linha-gradiente::after{
+    position: absolute;
+    height: 3px;
+    width: 120%;
+    left: -10%;
+    top: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 }
 
@@ -139,10 +161,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--cor-principal1);
+  background-color: #0c214d2a;
   box-shadow:  0 0 20px black;
   width: 100vw;
-  height: fit-content;
+  min-height: fit-content;
+  height: 3vw;
 }
 
 .cta-header{
@@ -152,21 +175,23 @@ nav {
   font-size: clamp(1rem, 3vw, 8rem);
   color: var(--cor-neutra4);
   text-shadow: 0 0 10px black;
-
+  
   p{
     user-select: none;
-    z-index: 999;
+    /* z-index: 999; */
     position: relative;
     font-size: clamp(1rem, 1.6vw, 8rem);
     margin-inline: 10px;
     margin-block: 1rem;
   }
-  
+}
+
+.cta-header, .pronto-para-transformar{
   a, a #cta-transformar{
     font-family: 'Inter', sans-serif;
     display: inline-block;
     position: relative;
-    z-index: 999;
+    /* z-index: 999; */
     color: var(--cor-neutra5);
     font-size: clamp(1rem, 1.8vw, 6rem);
     width: fit-content;
@@ -177,22 +202,25 @@ nav {
     box-shadow: 0 0 10px black;
     text-shadow: none;
     margin: 10px;
-    border: 1px solid var(--cor-principal2);
+    border: 1px solid #2564eb80;
     /* &::after{content: ' →';} */
   }
-
-  a:hover, a:focus-visible{ color:var(--cor-principal2); }     
-}
   
+  a:hover, a:focus-visible{ 
+    color:var(--cor-principal2); 
+    box-shadow: 0 0 2px var(--cor-principal2);
+  }     
+}
+
 #botao-rolar{
   /*Tamanho  */
   width: 52px;
   height: 52px;  
   /* Posição */
-  z-index: 999;
+  /* z-index: 999; */
   position: fixed;
   top: 90vh;
-  
+  z-index: 3;
   /* Animação */
   animation-name: sobe_desce;
   animation-duration: 1s;
@@ -227,39 +255,37 @@ nav {
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
-  background-color: var(--cor-neutra1);
+  /* background-color: var(--cor-neutra1); */
   color: var(--cor-principal5);
   text-shadow: 0 0 10px black;
-
+  
   img{
     width: 150px;
     height: auto;
-    box-shadow: 0 0 20px var(--cor-neutra1);
+    /* box-shadow: 0 0 20px var(--cor-neutra1); */
   }
 }
 
-.como-funciona, .compromisso{
-  h2, p{
-    width: 100%;
-    text-align: center;
-  }
-
-  h2{
-    font-size: clamp(1.5rem, 4vw, 8rem);
-    font-family: var(--fonte-titulos);
-  }
-
+.como-funciona, .problemas-que-resolvemos, .compromisso{
   p{
-    font-size: clamp(1rem, 2vw, 5rem);
+    font-size: clamp(0.8rem, 1.5vw, 4rem);
     margin: 0 auto;
   }
+  
+  .cabecalho {
+    
+    h2{
+      font-size: clamp(1.5rem, 3vw, 8rem);
+      font-family: var(--fonte-titulos);
+    }
+  }
+  
 }
 
 .card{
-  /* flex-basis: 20%; */
-  /* height: 20vh; */
-  /* width: 20vw; */
+  
   display: flex;
+  max-width: 800px;
   gap: 1rem;
   color: var(--cor-principal5);
   text-shadow: 0 0 10px black;
@@ -272,16 +298,20 @@ nav {
     transform: scale(1.008);
   }
   
-  p{
-    text-align: left;
-    font-size: clamp(1rem, 1.5vw, 6rem);
+  h2, h3, p{
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 3rem);
   }
-}
-
-.texto-card{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  
+  ul{
+    margin-inline-start: 5%;
+  }
+  
+  p, li{
+    /* text-align: left; */
+    font-size: clamp(1rem, 1.2vw, 6rem);
+  }
 }
 
 .problemas-que-resolvemos{
@@ -292,7 +322,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
+  
 }
 
 .cabecalho{
@@ -306,34 +336,55 @@ nav {
 .problemas-que-resolvemos, .compromisso {
   .cards{
     display: flex;
+    width: 90vw;
     flex-wrap: wrap;
     padding: 2rem;
     gap: 1rem;
     justify-content: space-around;
   }
-
+  
   .card{
-    flex: 1 1 50%;
+    flex: 1 1 30%;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     background-color: var(--cor-neutra2);
     box-shadow: 0 0 20px black;
-    border-inline-end: solid 10px var(--cor-principal2);
   }
 }
+.compromisso .card {border-inline-end: solid 10px var(--cor-principal4);}
+.problemas-que-resolvemos .card{ border-inline-end: solid 10px var(--cor-principal2);}
 /* Footer */
 footer {
   background-color: black;
   color: white;
-  font-size: clamp(10px, 1vw, 10rem);
+  font-size: clamp(0.8rem, 0.8vw, 3rem);
+  text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 200px;
+  background-color: var(--cor-principal1);
+  /* z-index: 4; */
   a {
     color: white;
     &:hover {color: yellow;}
+  }
+}
+
+.pronto-para-transformar{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* font-size: clamp(1rem, 1.5vw, 8rem); */
+  justify-content: space-around;
+  background-image: linear-gradient(to right,#7C3AED,#2563EB,#0B1F3A);
+  padding: 2rem;
+  color: var(--cor-principal5);
+  h2,p{
+    padding: 5px;
+    text-shadow: 0 0 10px black;
   }
 }
 
@@ -355,3 +406,7 @@ footer {
   to { transform: scaleX(1) ; }
 }
 
+@keyframes esmaecer{
+  from{opacity: 1;}
+  to{opacity:0.7;}
+}
