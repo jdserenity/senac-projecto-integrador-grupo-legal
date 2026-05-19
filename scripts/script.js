@@ -1,21 +1,27 @@
 'use strict'
 
-const pauseButton = document.getElementsByClassName("pause-button")[0];
 const heroVideo = document.getElementsByTagName("video")[0];
-const scrollButton = document.querySelector("#botao-rolar");
-const startSection = document.querySelector('#comeco-rolagem')
-
+const titulo = document.querySelector('#titulo');
+const tituloNav = document.querySelector('#titulo-nav');
+const ancoraComoFunciona = document.querySelector('#ancora-como-funciona');
+const botaoRolagem = document.querySelector('#botao-rolar');
 heroVideo.playbackRate = 0.75;
+console.log(botaoRolagem);
 
-pauseButton.addEventListener("click", () => {
-  if (heroVideo.paused) {heroVideo.play(); pauseButton.src = "../assets/pause-button-128.png"; return} 
-  heroVideo.pause(); pauseButton.src = "../assets/play-button-128.png";
-})
+const tituloResponsivo = new IntersectionObserver (([entry]) => {
+    if (entry.isIntersecting){
+        tituloNav.classList.remove('visivel');
+    } else tituloNav.classList.add('visivel');
+    {
+        threshold: 0;
+    }
+});
 
-scrollButton.addEventListener('click', () =>{
-  startSection.scrollIntoView({behavior: "smooth"});
-})
+// const rolagemDinamica = new IntersectionObserver(([entry]) => {
+//     if (entry.isIntersecting){    
+//         botaoRolagem.href = 
+//     }
+// }
+// );
 
-function toggleMenu() {
-  document.getElementById("menu").classList.toggle("active");
-}
+tituloResponsivo.observe(titulo)

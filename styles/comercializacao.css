@@ -180,6 +180,12 @@ html {
         cursor: pointer;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
     }
     .request{
         background-color: white;
