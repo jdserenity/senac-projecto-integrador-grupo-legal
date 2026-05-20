@@ -412,7 +412,7 @@ footer {
   gap: 0.5rem;
 }
 
-.logo-original { width: 10vw; }
+.logo-original { width: clamp(50px, 8vw, 150px); }
 
 @keyframes sobe_desce{
   from{transform: translateY(10px);}
